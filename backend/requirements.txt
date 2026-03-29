@@ -1,0 +1,37 @@
+# Django core
+Django>=4.2
+
+# REST framework
+djangorestframework
+django-cors-headers
+drf-spectacular
+
+# Scheduler
+django-apscheduler
+
+# Machine learning
+numpy
+xgboost
+
+# Lunar calendar
+lunar-python
+
+# Retry mechanism
+tenacity
+
+# Encryption
+cryptography
+
+# Deployment
+gunicorn
+
+# Development tools
+black
+flake8
+isort
+pre-commit
+
+# Testing
+pytest
+pytest-cov
+pytest-django

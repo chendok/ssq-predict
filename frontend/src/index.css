@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Deep Ocean Theme */
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 32% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 224 76% 48%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 355 100% 97%;
+
+    --warning: 48 96% 53%;
+    --warning-foreground: 222 47% 11%;
+
+    --info: 217 91% 60%;
+    --info-foreground: 222 47% 11%;
+
+    --radius: 0.5rem;
+
+    /* Custom lottery colors */
+    --ball-red: 350 80% 60%;
+    --ball-blue: 210 80% 60%;
+  }
+
+  /* 黑金尊贵主题 */
+  .theme-gold {
+    --background: 0 0% 4%;
+    --foreground: 45 100% 90%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 45 100% 90%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 45 100% 90%;
+
+    --primary: 45 100% 60%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 45 100% 90%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 45 30% 70%;
+
+    --accent: 45 70% 20%;
+    --accent-foreground: 45 100% 90%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 45 100% 90%;
+
+    --border: 45 70% 20%;
+    --input: 0 0% 12%;
+    --ring: 45 100% 60%;
+
+    --success: 142 70% 40%;
+    --success-foreground: 0 0% 4%;
+
+    --warning: 45 100% 60%;
+    --warning-foreground: 0 0% 4%;
+
+    --info: 210 80% 60%;
+    --info-foreground: 0 0% 4%;
+
+    --radius: 0.5rem;
+
+    /* Custom lottery colors */
+    --ball-red: 350 80% 60%;
+    --ball-blue: 45 100% 60%;
+  }
+
+  /* 科技深蓝主题 */
+  .theme-tech {
+    --background: 220 80% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 80% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 80% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 100% 50%;
+    --primary-foreground: 220 80% 8%;
+
+    --secondary: 220 80% 18%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 80% 18%;
+    --muted-foreground: 210 20% 70%;
+
+    --accent: 210 100% 20%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 100% 20%;
+    --input: 220 80% 18%;
+    --ring: 210 100% 50%;
+
+    --success: 150 100% 50%;
+    --success-foreground: 220 80% 8%;
+
+    --warning: 60 100% 50%;
+    --warning-foreground: 220 80% 8%;
+
+    --info: 190 100% 50%;
+    --info-foreground: 220 80% 8%;
+
+    --radius: 0.5rem;
+
+    /* Custom lottery colors */
+    --ball-red: 350 80% 60%;
+    --ball-blue: 210 100% 60%;
+  }
+
+  /* 国风雅致主题 */
+  .theme-chinese {
+    --background: 340 20% 96%;
+    --foreground: 180 20% 15%;
+
+    --card: 340 20% 98%;
+    --card-foreground: 180 20% 15%;
+
+    --popover: 340 20% 98%;
+    --popover-foreground: 180 20% 15%;
+
+    --primary: 180 30% 40%;
+    --primary-foreground: 340 20% 98%;
+
+    --secondary: 340 10% 90%;
+    --secondary-foreground: 180 20% 15%;
+
+    --muted: 340 10% 90%;
+    --muted-foreground: 180 10% 40%;
+
+    --accent: 180 20% 85%;
+    --accent-foreground: 180 20% 15%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 340 20% 98%;
+
+    --border: 180 20% 85%;
+    --input: 340 10% 90%;
+    --ring: 180 30% 40%;
+
+    --success: 140 30% 50%;
+    --success-foreground: 340 20% 98%;
+
+    --warning: 35 60% 50%;
+    --warning-foreground: 340 20% 98%;
+
+    --info: 200 30% 50%;
+    --info-foreground: 340 20% 98%;
+
+    --radius: 0.5rem;
+
+    /* Custom lottery colors */
+    --ball-red: 0 60% 50%;
+    --ball-blue: 180 40% 40%;
+  }
+
+  /* Light mode override if needed */
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 355 100% 97%;
+
+    --warning: 48 96% 53%;
+    --warning-foreground: 222 47% 11%;
+
+    --info: 217 91% 60%;
+    --info-foreground: 222 47% 11%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
